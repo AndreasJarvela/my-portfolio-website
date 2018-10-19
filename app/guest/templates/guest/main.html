@@ -1,0 +1,47 @@
+{% extends "guest/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{{url_for('.static', filename='guest/css/about.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('.static', filename='guest/css/projects.css')}}">
+{% endblock %}
+
+{% block content %}
+    <div id="intro-container" style="background-image: url({{url_for('.static', filename='guest/images/introimage.jpeg')}})">
+        <div id="introduction-text">
+            <p id="intro-title">Lorem!<p>
+            <p id="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eleifend ac justo ac bibendum. Nulla euismod massa dui, sed aliquam ante congue dapibus. Fusce fermentum lectus eros, ac laoreet neque efficitur sit amet. </p>
+        </div>
+    </div>
+    <div id="projects-container">
+    <div id="project-title">
+        <p>WHAT I’VE DONE SO FAR</p>
+    </div>
+    <div class="project-box">
+        <div style="width: auto">
+            <div class="project-image">
+                <img src="{{url_for('.static', filename='guest/images/msidan.png')}}">
+            </div>
+            <div class="project-information">
+                <h2>
+                    WEB DEVELOPMENT
+                </h2>
+                <p>
+                    Fusce facilisis lacus in lorem convallis aliquet. Aliquam elementum ex orci, sed maximus neque fermentum ac. Vivamus ultrices faucibus velit vel elementum. Sed odio quam, ultrices sagittis dignissim a, viverra nec mi.
+                    Aenean lacus odio, eleifend id neque vitae, eleifend pulvinar justo. Proin ultrices risus pulvinar quam dictum eleifend. Ut consequat ligula a laoreet facilisis. Duis placerat euismod ante sit amet gravida. Morbi at orci nunc. Praesent ultrices lacinia facilisis. Integer
+                    convallis, velit ut porta fermentum, orci justo volutpat elit, at tincidunt lacus erat a quam. Morbi accumsan convallis lacus eget dignissim. Curabitur eu erat in justo feugiat aliquam sed sed diam. Sed lacinia libero eu fermentum iaculis. Aenean volutpat elit ex, rutrum pellentesque sapien tincidunt in.
+                    Curabitur enim ligula, molestie id ex vitae, pharetra vehicula nisi.
+                </p>
+                <p>
+                    Fusce facilisis lacus in lorem convallis aliquet. Aliquam elementum ex orci, sed maximus neque fermentum ac.
+                </p>
+                <p>
+                    Fusce facilisis lacus in lorem convallis aliquet. Aliquam elementum ex orci, sed maximus neque fermentum ac.
+                </p>
+                <div class="project-stats">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+{% endblock %}

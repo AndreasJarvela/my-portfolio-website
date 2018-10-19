@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Andreas Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('.static', filename='guest/css/sticky-footer.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('.static', filename='guest/css/footer.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('.static', filename='guest/css/general.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('.static', filename='guest/css/header.css')}}">
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+    <div class="header">
+        <ul id="navlinks">
+            <li>
+                <div class="fix">
+                    <a href="#"><p id="contact-link">Contact</p></a>
+                </div>
+            </li>
+            <li id="skill-nav">
+                <a href="#">Skills &#xf0d7;</a>
+            </li>
+            <li>
+                 <a href="#">Projects</a>
+            </li>
+            <li>
+                 <a href="#">About</a>
+            </li>
+
+            <li id="nav-logo">
+                <img src="{{url_for('.static', filename='guest/images/logo.svg')}}">
+            </li>
+            <li id="nav-logo-text">
+                <div class="fix">
+                    <p>Andreas</p>
+                    <p>Portfolio</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <div class="footer">
+
+    </div>
+</body>
+</html>

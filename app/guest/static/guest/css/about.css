@@ -1,0 +1,37 @@
+#intro-container {
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    border-bottom: solid;
+    border-color: #da8428;
+    border-width: 3px;
+}
+
+#introduction-text{
+    font-size: 30px;
+    margin-top: 300px;
+    margin-right: 100px;
+    width: 600px;
+    height: 300px;
+    color: #3d464d;
+    word-wrap: break-word;
+    float: right;
+    vertical-align: middle;
+    font-family: Raleway;
+}
+
+#intro-title {
+    letter-spacing: 3px;
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+#intro-text {
+    letter-spacing: 2px;
+    font-weight: 300;
+    line-height: 35px;
+    font-size: 22px;
+}
